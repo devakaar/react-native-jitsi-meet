@@ -54,7 +54,6 @@ public class RNJitsiMeetViewManager extends SimpleViewManager<RNJitsiMeetView> i
     @RequiresApi(api = Build.VERSION_CODES.N)
     @ReactProp(name = "options")
     public void options(RNJitsiMeetView view, ReadableMap data){
-        System.out.println("data = " + data);
         String url= data.getString("url");
         ReadableMap meetOptions=  data.getMap("meetOptions");
         ReadableMap meetFeatureFlags=  data.getMap("meetFeatureFlags");
